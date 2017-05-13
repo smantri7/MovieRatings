@@ -1,0 +1,6 @@
+<% title 'Rated Movies' %>
+<% for movie in @movies do %>
+  <h2><%= link_to(h(movie.title), movie_path(movie)) %></h2>
+  <p><%= movie.thoughts %></p>
+<% end %>
+<%= will_paginate @movies %>
