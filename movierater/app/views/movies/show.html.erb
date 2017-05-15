@@ -20,3 +20,8 @@
  
   <%= form.submit 'Save' %>
 <% end %>
+<p>
+  Admin Actions: 
+  <%= link_to 'Edit', edit_movie_path(@movie) %> |
+  <%= link_to 'Delete', movie_path(@movie), :method => :delete, :confirm => "Are you sure?" %>
+</p>

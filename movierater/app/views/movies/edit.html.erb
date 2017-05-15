@@ -1,0 +1,15 @@
+<% title "Editing #{@movie.title}" %>
+ 
+<%= form_for(@movie) do |form| %>
+  <p>
+    <%= form.label :title %><br/>
+    <%= form.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= form.label :thoughts %><br/>
+    <%= form.text_area :thoughts %>
+  </p>
+ 
+  <%= form.submit %>
+<% end %>
