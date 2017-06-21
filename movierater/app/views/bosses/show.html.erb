@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @boss.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @boss.email %>
+</p>
+
+<p>
+  <strong>Login:</strong>
+  <%= @boss.login %>
+</p>
+
+<%= link_to 'Edit', edit_boss_path(@boss) %> |
+<%= link_to 'Back', bosses_path %>
